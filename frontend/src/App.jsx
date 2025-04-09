@@ -55,7 +55,7 @@ function App() {
     setError(null);
     setSonuc([]);
     try {
-      const res = await fetch('http://localhost:3001/kontrol', {
+      const res = await fetch('https://intihal-api.onrender.com/kontrol', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ tez, kaynaklar, esik }),
